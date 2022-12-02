@@ -24,7 +24,6 @@ scores={
 total_score=0
 for line in lines:
     score=scores[line[-1]]+winning_score(scores[line[0]], scores[line[-1]])
-    print(score)
     total_score+=score
 print(total_score)
 
