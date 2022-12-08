@@ -24,8 +24,5 @@ for key in filesystem:
 
 print(sum([value for value in total_filesystem.values() if value <= 100000]))
 
-    
 #part 2
 print(min([value for value in total_filesystem.values() if value >= (total_filesystem["/"]-40_000_000)]))
-
-    
