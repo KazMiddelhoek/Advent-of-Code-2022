@@ -33,7 +33,7 @@ for y in range(1,len(forest)-1):
         scores=[find_score_from_view(view) for view in [view_left,view_right,view_above,view_under]]
         current_score=1
         for score in scores:
-            current_score=current_score*score
+            current_score*=score
 
         if current_score>highest_viewing_score:
             highest_viewing_score=current_score
